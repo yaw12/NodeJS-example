@@ -1,5 +1,5 @@
 #!/bin/bash
-# An example to install npm needed for nodeJS to work
+// An example to install npm needed for nodeJS to work
 
 job('NodeJS example') {
 
