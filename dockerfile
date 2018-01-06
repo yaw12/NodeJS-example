@@ -1,10 +1,10 @@
 #!/bin/bash
 // An example to install npm needed for nodeJS to work
 
-job('NodeJS example') {
+job('NodeJS-example') {
 
 scm { 
-  git('git://github.com/wardviaene/docker-demo.git') { node ->
+  git('https://github.com/yaw12/NodeJS-example.git') { node ->
       node / gitConfigName('Username')		 
       node / gitConfigEmail('email@address')
    }
