@@ -20,6 +20,6 @@ wrappers {
 }
 
 steps {
-    shell ("npm install")
+    shell ("sudo apt install npm")
       }
 }
