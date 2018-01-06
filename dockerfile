@@ -4,7 +4,7 @@
 job('NodeJS-example') {
 
 scm { 
-  git('https://github.com/yaw12/NodeJS-example.git') { node ->
+  git('https://github.com/yaw12/NodeJS-example.git') { node -> // is hudson.plugins.git.GitSCM
       node / gitConfigName('Username')		 
       node / gitConfigEmail('email@address')
    }
@@ -15,7 +15,7 @@ triggers {
 }
 
 wrappers {
-    nodejs('nodejs') // this is the name of the NodeJS installation in 
+    nodejs('nodejsl') // this is the name of the NodeJS installation in 
 	            // Manage Jenkins -> Configure Tools -> NodeJS Installation Name
 }
 
